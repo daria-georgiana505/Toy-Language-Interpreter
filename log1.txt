@@ -1,0 +1,955 @@
+-------------------------
+ID = 1
+ExeStack:
+int v
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+32
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+32
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+int v
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+32
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+SymTable:
+a --> (1, int)
+v --> 32
+Out:
+10
+30
+32
+30
+FileTable:
+HeapTable:
+1 --> 30
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+int v
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+Ref(int) a
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+v = 10
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 0
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+NEW(a, 22)
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (0, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+FORK {
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+}
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+wH(a, 30)
+v = 32
+PRINT(v)
+PRINT(rH(a))
+SymTable:
+a --> (1, int)
+v --> 10
+Out:
+FileTable:
+HeapTable:
+1 --> 22
+SemaphoreTable:
+-------------------------

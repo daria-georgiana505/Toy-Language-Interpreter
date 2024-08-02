@@ -1,0 +1,56 @@
+-------------------------
+ID = 2
+ExeStack:
+NopStatement
+int x
+x = 5 / 0
+PRINT(x)
+SymTable:
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+int x
+x = 5 / 0
+PRINT(x)
+SymTable:
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+int x
+x = 5 / 0
+PRINT(x)
+SymTable:
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+x = 5 / 0
+PRINT(x)
+SymTable:
+x --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 2
+ExeStack:
+x = 5 / 0
+PRINT(x)
+SymTable:
+x --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------

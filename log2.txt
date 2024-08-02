@@ -1,0 +1,374 @@
+-------------------------
+ID = 1
+ExeStack:
+int a
+int b
+a = 2 + 3 * 5
+b = a + 1
+PRINT(b)
+SymTable:
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+int b
+a = 2 + 3 * 5
+b = a + 1
+PRINT(b)
+SymTable:
+a --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+int b
+a = 2 + 3 * 5
+b = a + 1
+PRINT(b)
+SymTable:
+a --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+a = 2 + 3 * 5
+b = a + 1
+PRINT(b)
+SymTable:
+a --> 0
+b --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+a = 2 + 3 * 5
+b = a + 1
+PRINT(b)
+SymTable:
+a --> 0
+b --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+b = a + 1
+PRINT(b)
+SymTable:
+a --> 17
+b --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+b = a + 1
+PRINT(b)
+SymTable:
+a --> 17
+b --> 0
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(b)
+SymTable:
+a --> 17
+b --> 18
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+SymTable:
+a --> 17
+b --> 18
+Out:
+18
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool a
+bool b
+bool c
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool b
+bool c
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool b
+bool c
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool c
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool c
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> false
+c --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+a = false
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> false
+c --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> false
+c --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+b = true
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> false
+c --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+c --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+c = true
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+c --> false
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+c --> true
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+bool r
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+c --> true
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+r --> false
+c --> true
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+r = a OR b AND c
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+r --> false
+c --> true
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+PRINT(r)
+SymTable:
+a --> false
+b --> true
+r --> true
+c --> true
+Out:
+FileTable:
+HeapTable:
+-------------------------
+-------------------------
+ID = 1
+ExeStack:
+SymTable:
+a --> false
+b --> true
+r --> true
+c --> true
+Out:
+true
+FileTable:
+HeapTable:
+-------------------------
